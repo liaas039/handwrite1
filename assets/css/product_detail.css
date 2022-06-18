@@ -1,0 +1,156 @@
+
+body {
+    min-width: 1800px;
+}
+
+/*標題列圖是設定*/
+.img1 {
+    height: 30px;
+    padding: 0px 10px;
+}
+
+
+.header_style
+ {
+    padding-bottom: 30px;
+}
+
+.head_title{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.head_top {
+    font-size: 15px;
+    height: 40px;
+    background-color: #A6FFA6;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.head_title {
+    height: auto;
+}
+img {
+    max-height: 250px;
+    width: 100%;
+}
+
+/*商品資料區塊*/
+.product_information{
+    margin: 20px 20%;
+    height: 550px;
+}
+
+.product_image{
+    height: 100%;
+    float: left;
+    width: 40%;
+}
+
+#top_image{
+    width:400px;
+    height: 400px;
+    background-size:contain;
+    margin: 10px;
+}
+#small_image{
+    width:100px;
+    height: 100px;
+    background-size:contain;
+    margin: 2px;
+    float: left;
+}
+
+.product_text{
+    width:55%;
+    text-align: center;
+    float: right;
+}
+
+.shoppimg_button{
+   margin: 10px;
+   background-color: white;
+   border: none;
+   border-radius: 10px;
+}
+
+.shoppimg_button:hover{
+    background-color: #A6FFA6;
+}
+
+.button2{
+    border:2px  solid #A6FFA6;
+    margin: 10px;
+    background-color: white;
+}
+
+/*數量*/
+
+.amount{
+    margin: 10px;
+}
+/*商品內容TAB設定*/
+* {box-sizing: border-box}
+
+.member_infor{
+    margin-top: 20px;
+}
+
+.tab {
+    width:100%;
+    height: auto;
+    border: 1px solid black;
+    text-align: center;
+  }
+  
+
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    border: solid 1px black;
+  }
+
+
+
+  /*根據後臺色碼修改顏色*/
+.dot_display {
+    display: flex;
+    justify-content: center;
+}
+
+.dot_color {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+.dot_button{
+    background-color: white;
+    border: none;
+}

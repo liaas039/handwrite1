@@ -1,0 +1,25 @@
+.comment_outside{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5% 10%;
+}
+.comment_form{
+    width: 40%;
+    display: block;
+    text-align: center;
+    border: solid 1px black;
+}
+
+.left {
+    float: left;
+    width: 100%;
+}
+.star_photo{
+    height: 30px ;
+    width: 30px;
+}
+.product_photo{
+    height: 200px;
+    width: 200px;
+}

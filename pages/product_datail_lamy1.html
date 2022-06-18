@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/product_detail.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="../assets/js/member_tabcontrol.js"></script>
+    <script>
+        function ADD() {
+            var num = parseInt(document.getElementById('amount').innerText);
+            num++;
+            document.getElementById('amount').innerText = num.toString();
+            ProductNumberChange();
+        }
+
+        function DE() {
+            var num = parseInt(document.getElementById('amount').innerText);
+            if (num > 1) {
+                num--;
+                document.getElementById('amount').innerText = num.toString();
+                ProductNumberChange();
+            } else {
+                Delete()
+            }
+        }
+
+        function p_1(){
+            document.getElementById("top_image").style.backgroundImage="url(../assets/images/lamy/lamy.jpg)";
+        }
+        function p_2(){
+            document.getElementById("top_image").style.backgroundImage="url(../assets/images/lamy/lamy2.jpg)";
+        }   
+        function p_3(){
+            document.getElementById("top_image").style.backgroundImage="url(../assets/images/lamy/lamy4.jpg)";
+        }
+        function p_4(){
+            document.getElementById("top_image").style.backgroundImage="url(../assets/images/lamy/lamy3.jpg)";
+        }
+
+
+
+    </script>
+</head>
+
+<body >
+    <!--導覽列-->    
+    <nav class="navbar navbar-expand-lg navbar-light  bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Hand沃</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="member_login.html">會員</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">購物車</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        商品
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="product_lamy.html">LAMY</a></li>
+                            <li><a class="dropdown-item" href="product_parker.html">PARKER</a></li>
+                            <li><a class="dropdown-item" href="product_PLATINUM.html">PLATINUM</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="nav-link" href="abouts.html"> 關於</a></li>
+                    <li><a class="nav-link" href="mailto:handwrite@gmail.com">聯絡我們</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="LOGO">
+        <img src="../assets/images/LOGO.jpg">
+    </div>
+
+
+    <!--商品資料-->
+    <div class="product_information">
+        <!--商品照片-->
+        <div class="product_image">
+            <div id="top_image" style="background-image:url(../assets/images/lamy/lamy.jpg)"></div>
+            <div class="bottom_image">
+                <div id="small_image" style="background-image:url(../assets/images/lamy/lamy.jpg)" onclick="p_1()"></div>
+                <div id="small_image" style="background-image:url(../assets/images/lamy/lamy2.jpg)"onclick="p_2()"></div>
+                <div id="small_image" style="background-image:url(../assets/images/lamy/lamy4.jpg)"onclick="p_3()"></div>
+                <div id="small_image" style="background-image:url(../assets/images/lamy/lamy3.jpg)"onclick="p_4()"></div>
+            </div>
+        </div>
+
+        <!--商品下訂-->
+        <div class="product_text">
+
+            <h2 style="background-color: #CEFFCE;">德國 Lamy Safari 狩獵系列 2021限定色 叢林系列鋼筆</h2></br></br>
+            <h1>$750</h1></br></br>
+            <div>
+                <div>
+                    <button onclick="DE()" class="button2">
+                        -
+                    </button>
+
+                    <span id="amount" class="amount">1</span>
+
+                    <button onclick="ADD()" class="button2">
+                        +
+                    </button>
+                </div>
+                <div class="dot_display">
+                    <div><button class="dot_button"><span class="dot_color" style="background-color: green;"></span>
+                        </button></div>
+                    <div><span class="dot_color" style="background-color: orangered;"></span></div>
+                </div>
+                <div>
+                    <button class="shoppimg_button">
+                        <a href="cart.html"><P>加入購物車</P></a>
+                    </button>
+                    <button class="shoppimg_button">
+                        <a href="order.html"><P>直接購買</P></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="member_infor">
+                <div class="tab">
+                    <div style="width: 20%;float: left;"><button class="tablinks"
+                            onclick="open_memberfun(event, 'membership')" autofocus>商品資訊</button></div>
+                    <div style="width: 20%;float: left ;"><button class="tablinks"
+                            onclick="open_memberfun(event, 'purchase_record')">商品規格</button>
+                    </div>
+                    <div style="width: 20%;float: left ;"><button class="tablinks"
+                            onclick="open_memberfun(event, 'purchase_car')">商品評論</button></div>
+                </div>
+
+                <div id="membership" class="tabcontent">
+                    <p>德國 Lamy Safari 狩獵系列 2021限定色 叢林系列鋼筆
+
+
+
+                        2021 LAMYSAFARI狩獵者系列 叢林色彩 限量上市，顛覆以往每年只發行單一限量色彩筆款，
+
+                        LAMY SAFARI Savanna Green 和 Terra Red 叢林系列，鋼筆筆身與筆蓋為霧面
+
+                        『叢林綠與叢林橘』限量色，筆蓋頂端為黑色，搭配黑色筆夾和黑色鋼筆筆尖。
+
+                        此限量 LAMY SAFARI 叢林系列推出，為慶祝 LAMY歷史上 SAFARI 最重要的里程碑，
+
+                        2021 年 LAMY SAFARI
+
+                        1980年狩獵系列第一代強勢回歸：
+
+                        Savanna Green 和 Terra Red 叢林綠與叢林紅！
+                        <p>請注意：
+
+                            1.Lamy筆款出廠前會將筆尖沾墨試寫測試看看，且不會清洗表示筆尖沒問題
+                            所以若是一開始要灌比較淺色的墨水，建議將筆洗淨後再灌墨，避免影響顏色。
+
+                            2.新筆筆身上會有防護條（咖啡色紙圈），使用前請將之取下即可開始使用。</p>
+                    </p>
+                </div>
+
+                <div id="purchase_record" class="tabcontent">
+                    <p>品牌：Lamy
+                        筆尖材質：不鏽鋼
+                        筆幅： EF、F、M 尖
+                        筆身材質：樹脂
+                        開蓋方式：拔蓋
+                        上墨方式：卡水/吸墨器兩用
+                        配件：原廠筆盒，吸墨器，卡式墨水*1支</p>
+                </div>
+
+                <div id="purchase_car" class="tabcontent">
+                    <div style="border:solid 1px black;height: 100%;width: 100%;text-align: center;">
+                        <div style="display:flex;padding:0% 10%;">
+                            <!--評論投向-->
+                            <div style="border:solid 1px black;height:100px;width:100px; margin: 10px;">
+                                <img src="../assets/images/default_member.jpg" alt="" style="border-radius: 50%;">
+                            </div>
+                            <!--評論內容 有購買紀錄才可評論-->
+                            <div style="border:solid 1px black;height:100px;width:70%; margin: 10px;">
+                                <P style="float: left;">使用者名稱</P><br>
+                                <p>我是評論內容</p>
+                            </div>
+                            <div style="border:solid 1px black;height:100px;width:20%; margin: 10px;">
+                                <p>評論時間</p>
+                                <P>星星放置處</P>
+                            </div>
+                        </div>
+                        <div style="display:flex;padding:0% 10%;">
+                            <!--評論投向-->
+                            <div style="border:solid 1px black;height:100px;width:100px; margin: 10px;">
+                                <img src="../assets/images/default_member.jpg" alt="" style="border-radius: 50%;">
+                            </div>
+                            <!--評論內容 有購買紀錄才可評論-->
+                            <div style="border:solid 1px black;height:100px;width:70%; margin: 10px;">
+                                <P style="float: left;">使用者名稱</P><br>
+                                <p>我是評論內容</p>
+                            </div>
+                            <div style="border:solid 1px black;height:100px;width:20%; margin: 10px;">
+                                <p>評論時間</p>
+                                <P>星星放置處</P>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+
+</body>
+
+</html>

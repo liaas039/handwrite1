@@ -1,0 +1,64 @@
+*{
+  margin:0 ;
+  padding: 0;
+  list-style: none;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background: url("../images/member_login_background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.memberlogin{
+    width: 700px;
+    height: 500px;
+    background-color:rgb(255, 255, 255,0.5) ;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form{
+    width: 500px;
+
+    font-family:Microsoft JhengHei ;
+}
+.form h1{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000000;
+}
+.form .group{
+    margin-bottom: 20px;
+}
+.form label{
+
+}
+.form input{
+   margin: 20px 0px 20px 0px;
+   line-height: 2;
+   border-radius: 10px ;
+}
+.form.btn-group{
+    font-size: 0;
+}
+.form .btn{
+    font-size: 30px;
+    border-radius:15px;
+    border: none;
+    background-color:#5CADAD;
+    width: 200px;
+
+}
+.registered{
+    margin-top: 6px;
+    letter-spacing: 1px;
+}
+.registered a{
+    font-weight: 600;
+    text-decoration: none;
+}

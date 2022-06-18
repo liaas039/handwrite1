@@ -1,0 +1,177 @@
+
+
+body {
+    min-width: 1800px;
+}
+
+
+
+/*上方標題設置*/
+
+.header_style{
+    padding-bottom: 30px;
+}
+
+.head_title {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.head_top {
+    font-size: 15px;
+    height: 40px;
+    background-color: #A6FFA6;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.head_p1 {
+    float: left;
+}
+
+.head_title {
+    height: 200px;
+}
+
+
+/*會員標籤*/
+* {box-sizing: border-box}
+
+.member_infor{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+img {
+  max-height: 250px;
+  width: 100%;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    width: 30%;
+    height: auto;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+ 
+  .tabcontent {
+    float: left;
+    padding: 0px 10%;
+    width: 70%;
+    height: auto;
+    text-align: center;
+  }
+
+
+  /*會員資料表格設定*/
+
+.registeredform{
+    background-color:#ADDDFF ;
+    width: 250px;
+    height: 150px;
+}
+.formcontent{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#registeredform,
+#change_registeredform
+ {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family:Microsoft JhengHei;
+  font-size: 0.875em;
+  width: 100%;
+  height: 50px;
+  padding: 0px 15px 0px 15px; 
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  text-align: center;
+}
+
+
+/*會員購買紀錄*/
+
+.buy_record{
+  border-bottom:solid 1px black ;
+  display: flex;
+  justify-content:space-evenly;
+  text-align: center;
+}
+
+.img_record{
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+}
+
+.name_record{
+  display: flex;
+  justify-content:space-evenly;
+}
+
+
+
+
+/*購物車*/
+ /*order_information*/
+ .order_information{
+  padding: 20px;
+  border: solid black 1px;
+}
+table{
+  width: 100%;
+  table-layout:fixed;
+  word-break:break-all;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+th{
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+/*購物車照片*/
+.cart_photo{
+  height:100px;
+  width: 100px;
+  background-size:cover;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+
+
+

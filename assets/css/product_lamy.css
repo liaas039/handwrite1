@@ -1,0 +1,130 @@
+
+body {
+    min-width: 1000px;
+}
+
+/*標題列圖是設定*/
+.img1 {
+    height: 30px;
+    padding: 0px 10px;
+}
+
+
+.header_style,
+.product_style {
+    padding-bottom: 30px;
+}
+
+.head_title,
+.nav_style,
+.product_style {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.head_top {
+    font-size: 15px;
+    height: 40px;
+    background-color: #A6FFA6;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.head_p1 {
+    float: left;
+}
+
+.head_title {
+    height: auto;
+}
+
+/*商品種類*/
+
+
+.nav_style {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav_contant{
+   font-size: 20px;
+   font-weight: bolder;
+   word-spacing: 3px;
+}
+.nav_contant:hover{
+    background-color: whitesmoke;
+}
+
+
+/*商品總覽*/
+
+.product_style {
+
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.goods_conten {
+    width: 25%;
+    height: 25%;
+}
+
+img {
+    max-height: 250px;
+    width: 100%;
+}
+
+/*文字敘述*/
+.goods_text {
+    background-color: #ccc;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+}
+
+.goods_text2 {
+    min-height: 100px;
+}
+
+.goods_name {
+    color: aliceblue;
+    font-size: large;
+    text-align: center;
+    font-weight: bolder;
+    word-spacing: 2px;
+    padding: 10px;
+
+}
+
+.goods_price {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bolder;
+    word-spacing: 5px;
+}
+
+.goods_kind {
+    color: aliceblue;
+    font-size: large;
+    text-align: center;
+    font-weight: bolder;
+    word-spacing: 2px;
+    padding: 10px;
+}
+
+.dot_display {
+    display: flex;
+    justify-content: center;
+}
+
+.dot_color {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
